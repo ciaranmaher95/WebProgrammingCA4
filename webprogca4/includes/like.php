@@ -20,7 +20,7 @@ $statement1->execute();
 $likes = $statement1->fetch(); 
 $statement1->closeCursor(); 
 
-$likeVotes = $likes['likes'] + $like;
+$likeVotes = $likes['likes'] + 1;
 
 $query2 = "UPDATE comments SET likes = :likes WHERE commentid = :commentid";
                                            
