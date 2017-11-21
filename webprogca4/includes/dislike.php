@@ -22,7 +22,7 @@ $dislikes = $statement1->fetch();
 $statement1->closeCursor(); 
 
 //adds the new dislike vote to the current total 
-$dislikeVotes = $dislikes['dislikes'] + $dislike;
+$dislikeVotes = $dislikes['dislikes'] + 1;
 
 //updates number of dislikes
 $query2 = "UPDATE comments SET dislikes = :likes WHERE commentid = :commentid";
