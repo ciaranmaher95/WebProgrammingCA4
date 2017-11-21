@@ -1,3 +1,8 @@
+<?php 
+
+session_start(); 
+?>
+
 <html>
     <head>
         <title></title>
@@ -12,7 +17,7 @@
 </head>
     <body>
         <?php
-      session_start();
+  
 
 if($_SESSION['userid'] != null)
     {
