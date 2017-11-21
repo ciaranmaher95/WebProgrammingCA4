@@ -1,3 +1,7 @@
+<?php 
+
+ session_start();
+?>
 <html>
     <head>
         <link href="css/style.css" rel="stylesheet" type="text/css"/>    
@@ -11,8 +15,6 @@
     
    
 <?php 
-
- session_start();
 
 if($_SESSION['userid'] != null)
     {
